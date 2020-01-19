@@ -1,0 +1,12 @@
+---
+title: R Markdown demo
+---
+
+Knit: `R: Knit Rmd` (`Ctrl-Shift-K`)
+
+```{r}
+library("tidyverse")
+iris %>%
+    ggplot(aes(Sepal.Length, Sepal.Width, colour = Species)) +
+    geom_point()
+```
