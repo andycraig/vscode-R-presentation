@@ -1,8 +1,19 @@
 ---
 title: R Markdown demo
+output: html_document
 ---
 
-Knit: `R: Knit Rmd` (`Ctrl-Shift-K`)
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Knit using Visual Studio Code command `R: Knit Rmd` (`Ctrl-Shift-K`)
+
+or
+
+In console:
+
+`rmarkdown::run("notebooks/markdown.Rmd")`
 
 ```{r}
 library("tidyverse")

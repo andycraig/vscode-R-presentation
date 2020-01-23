@@ -17,7 +17,7 @@ iris %>%
     group_by(Species) %>%
     summarise(mean_Sepal.width = mean(Sepal.Width))
 
-x <- 7
+x <- rnorm(10)
 y <- 8
 
 # Hover cursor over variable to see value
@@ -26,7 +26,7 @@ y
 
 # Go to definition
 # Ctrl-click on function
-my_function(3)
+a_function(3)
 
 # View help
 # Hover over 'apply'
@@ -35,9 +35,6 @@ apply(cars, 1, sum)
 # View help in window
 # Cursor on line, then Ctrl-Enter
 ?apply
-
-# Jump to symbol
-# Ctrl-t, then type 'fn'
 
 # Format code
 # Select code, right click, Format Selection
